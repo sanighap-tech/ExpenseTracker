@@ -1,0 +1,149 @@
+[
+    {
+        "user": "Amrutha",
+        "amount": "1000",
+        "category": "rent",
+        "date": "2026-02-11",
+        "description": "stay"
+    },
+    {
+        "user": "Rahul",
+        "amount": "2000",
+        "category": "rent",
+        "date": "2026-02-11",
+        "description": "stay"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "100",
+        "category": "Lunch",
+        "date": "2026-02-10",
+        "description": "food"
+    },
+    {
+        "user": "Rahul",
+        "amount": "3000",
+        "category": "Shopping",
+        "date": "2026-02-21",
+        "description": "dress"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "20",
+        "category": "tea",
+        "date": "2026-02-17",
+        "description": "food"
+    },
+    {
+        "user": "Rahul",
+        "amount": "10",
+        "category": "tea",
+        "date": "2026-02-17",
+        "description": "food"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "200",
+        "category": "uber",
+        "date": "2026-02-18",
+        "description": "traval"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "1000",
+        "category": "uber",
+        "date": "2026-02-18",
+        "description": "traval"
+    },
+    {
+        "user": "Rahul",
+        "amount": "300",
+        "category": "uber",
+        "date": "2026-02-12",
+        "description": "traval"
+    },
+    {
+        "user": "Rahul",
+        "amount": "500",
+        "category": "onam",
+        "date": "2026-02-11",
+        "description": "festival"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "100",
+        "category": "dosa",
+        "date": "2026-02-18",
+        "description": "food"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "100",
+        "category": "food",
+        "date": "2026-02-18",
+        "description": "dosa"
+    },
+    {
+        "user": "Rahul",
+        "amount": "50",
+        "category": "food",
+        "date": "2026-02-18",
+        "description": "snacks"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "100",
+        "category": "food",
+        "date": "2026-02-18",
+        "description": "dosa"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "100",
+        "category": "food",
+        "date": "2026-02-18",
+        "description": "dosa"
+    },
+    {
+        "user": "Rahul",
+        "amount": "200",
+        "category": "food",
+        "date": "2026-02-18",
+        "description": "dosa"
+    },
+    {
+        "user": "Rahul",
+        "amount": "1000",
+        "category": "rent",
+        "date": "2026-02-03",
+        "description": "stay"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "1000",
+        "category": "rent",
+        "date": "2026-02-03",
+        "description": "stay"
+    },
+    {
+        "user": "Rahul",
+        "amount": "1000",
+        "category": "rent",
+        "date": "2026-02-03",
+        "description": "stay"
+    },
+    {
+        "user": "Amrutha",
+        "amount": "2000",
+        "category": "rent",
+        "date": "2026-02-26",
+        "description": "stay"
+    },
+    {
+        "user": "ajo",
+        "amount": "100",
+        "category": "food",
+        "date": "2026-02-26",
+        "description": "noodles"
+    }
+]

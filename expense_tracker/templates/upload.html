@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+
+    <!-- Back Button -->
+    <div class="mb-3">
+        <a href="/" class="btn btn-outline-secondary">
+            ← Back to Home
+        </a>
+    </div>
+
+    <!-- Upload Card Centered -->
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0 glass-card mb-4">
+                <div class="card-body text-center">
+                    <h4 class="card-title mb-3">📂 Upload Expense JSON File</h4>
+
+                    <form method="POST" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input class="form-control" 
+                                   type="file" 
+                                   name="file" 
+                                   accept=".json" 
+                                   required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary px-4">
+                            Upload File
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% if grouped_uploaded %}
+    <hr class="my-4">
+
+    <h4 class="mb-3 text-center">📊 Uploaded Expense Report</h4>
+
+    {% for user, expenses in grouped_uploaded.items() %}
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-dark text-white">
+                <strong>👤 User: {{ user }}</strong>
+            </div>
+
+            <div class="card-body p-0">
+                <div class="table-responsive custom-scroll">
+                    <table class="table table-striped table-hover table-sm mb-0 text-center">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Amount</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for exp in expenses %}
+                            <tr>
+                                <td>₹{{ exp.amount }}</td>
+                                <td>{{ exp.category }}</td>
+                                <td>{{ exp.date }}</td>
+                                <td>{{ exp.description }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% if user_charts[user] %}
+<div class="text-center mt-3 mb-4">
+    <img src="data:image/png;base64,{{ user_charts[user] }}"
+         class="img-fluid"
+         style="max-width: 350px;"
+         alt="Pie Chart">
+</div>
+{% endif %}
+        </div>
+    {% endfor %}
+    {% endif %}
+
+
+    {% if chart_image %}
+    <hr class="my-4">
+
+    <h4 class="text-center mb-3">📈 Expense Distribution</h4>
+
+    <div class="text-center">
+        <div class="chart-container mx-auto">
+            <img src="data:image/png;base64,{{ chart_image }}"
+                 class="img-fluid"
+                 alt="Expense Chart">
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

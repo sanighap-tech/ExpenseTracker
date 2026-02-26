@@ -1,0 +1,55 @@
+body {
+    background: url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Transparent content box */
+.content-container {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+}
+
+/* Hero section */
+.hero-section {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Tables */
+.table {
+    background: white;
+}
+
+/* Scrollable table */
+.table-responsive {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Footer */
+footer {
+    letter-spacing: 1px;
+}
+
+
+/* Glass effect card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+/* Scrollable table */
+.custom-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Chart container */
+.chart-container {
+    max-width: 450px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
